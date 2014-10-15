@@ -14,6 +14,10 @@
 		B00DFC1319EDD69500239882 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B00DFC1219EDD69500239882 /* Images.xcassets */; };
 		B00DFC1619EDD69500239882 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B00DFC1419EDD69500239882 /* LaunchScreen.xib */; };
 		B00DFC2219EDD69500239882 /* webandmapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B00DFC2119EDD69500239882 /* webandmapTests.m */; };
+		B00DFC2D19EDD89F00239882 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B00DFC2C19EDD89F00239882 /* WebViewController.m */; };
+		B00DFC3019EE088900239882 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B00DFC2F19EE088900239882 /* MapViewController.m */; };
+		B00DFC3219EE0B3800239882 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B00DFC3119EE0B3800239882 /* MapKit.framework */; };
+		B00DFC3419EE0B3F00239882 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B00DFC3319EE0B3F00239882 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,12 @@
 		B00DFC1B19EDD69500239882 /* webandmapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = webandmapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B00DFC2019EDD69500239882 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B00DFC2119EDD69500239882 /* webandmapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = webandmapTests.m; sourceTree = "<group>"; };
+		B00DFC2B19EDD89F00239882 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		B00DFC2C19EDD89F00239882 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		B00DFC2E19EE088900239882 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		B00DFC2F19EE088900239882 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		B00DFC3119EE0B3800239882 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B00DFC3319EE0B3F00239882 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B00DFC3419EE0B3F00239882 /* CoreLocation.framework in Frameworks */,
+				B00DFC3219EE0B3800239882 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +75,8 @@
 		B00DFBF919EDD69500239882 = {
 			isa = PBXGroup;
 			children = (
+				B00DFC3319EE0B3F00239882 /* CoreLocation.framework */,
+				B00DFC3119EE0B3800239882 /* MapKit.framework */,
 				B00DFC0419EDD69500239882 /* webandmap */,
 				B00DFC1E19EDD69500239882 /* webandmapTests */,
 				B00DFC0319EDD69500239882 /* Products */,
@@ -85,6 +99,10 @@
 				B00DFC0A19EDD69500239882 /* AppDelegate.m */,
 				B00DFC0C19EDD69500239882 /* ViewController.h */,
 				B00DFC0D19EDD69500239882 /* ViewController.m */,
+				B00DFC2B19EDD89F00239882 /* WebViewController.h */,
+				B00DFC2C19EDD89F00239882 /* WebViewController.m */,
+				B00DFC2E19EE088900239882 /* MapViewController.h */,
+				B00DFC2F19EE088900239882 /* MapViewController.m */,
 				B00DFC0F19EDD69500239882 /* Main.storyboard */,
 				B00DFC1219EDD69500239882 /* Images.xcassets */,
 				B00DFC1419EDD69500239882 /* LaunchScreen.xib */,
@@ -221,7 +239,9 @@
 			files = (
 				B00DFC0E19EDD69500239882 /* ViewController.m in Sources */,
 				B00DFC0B19EDD69500239882 /* AppDelegate.m in Sources */,
+				B00DFC3019EE088900239882 /* MapViewController.m in Sources */,
 				B00DFC0819EDD69500239882 /* main.m in Sources */,
+				B00DFC2D19EDD89F00239882 /* WebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
